@@ -5,7 +5,9 @@ import "./Footer.css";
 
 const Footer = () => {
   return (
-    <footer className="footer">© Vermouth. All Rights Reserved.</footer>
+    <footer className="footer">
+      © Vermouth. All Rights Reserved.
+    </footer>
   );
 };
 
