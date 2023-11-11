@@ -4,27 +4,27 @@
  */
 
 module.exports = {
-  dev: {
+  development: {
     client: "postgresql",
     connection: {
-      // connectionString: "postgresql://user:password@localhost:5432/flower_shop",
+      // connectionString: "postgresql://user:password@localhost:5431/flower_shop",
       // 上記と下記、どちらかでいい
       host: "localhost",
-      port: 5432,
+      port: 5431,
       user: "user",
       database: "flower_shop",
-      password: "",
+      password: "password",
       ssl: process.env.DB_SSL ? { rejectUnauthorized: false } : false,
     },
-    migrations: { directory: "./data/migrations" },
-    seeds: { directory: "./data/seeds" },
+    migrations: { directory: "./migrations" },
+    seeds: { directory: "./seeds" },
   },
 
-  prod: {
+  production: {
     client: "postgresql",
     connection: process.env.DB_URL,
-    migrations: { directory: "./data/migrations" },
-    seeds: { directory: "./data/seeds" },
+    migrations: { directory: "./migrations" },
+    seeds: { directory: "./seeds" },
     pool: {
       min: 2,
       max: 10,

@@ -28,7 +28,7 @@ const OnlineShop = () => {
       <main className="online-shop">
         <h2 className="online-shop-title">Flower</h2>
         <article className="online-shop-flower-cardList">
-          {FlowerList.map((flowerInfo: FlowerInfo, index) => {
+          {FlowerList && FlowerList.map((flowerInfo: FlowerInfo, index) => {
             return (
               <section
                 key={flowerInfo.id}
@@ -38,20 +38,21 @@ const OnlineShop = () => {
                   <img
                     className="online-shop-flower-image"
                     src={flowerInfo.picture_url}
-                    alt="花束"
+                    alt={flowerInfo.name}
                   />
                 </div>
                 <h3 className="online-shop-flower-title">{flowerInfo.name}</h3>
                 <p className="online-shop-flower-price">
                   {`¥${flowerInfo.price
                     .slice(0, -3)
-                    .concat(",", flowerInfo.price.slice(-3))}`}
+                    .concat(",", flowerInfo.price.slice(-3))
+                  }`}
                 </p>
               </section>
             );
           })}
         </article>
-        <Modal />
+        {/* <Modal /> */}
       </main>
       <Footer />
     </>

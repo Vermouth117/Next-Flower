@@ -17,7 +17,7 @@
 .online-shop-flower-cardList {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 2em 1em;
+  gap: 3em 2em;
   place-items: center;
   padding: 2em 5em;
 }
