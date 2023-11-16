@@ -1,11 +1,11 @@
 
 import React from "react";
 
-import styles from "./Footer.module.css";
+import "./Footer.css";
 
 const Footer = () => {
   return (
-    <footer className={styles.footer}>
+    <footer className="footer">
       © Vermouth. All Rights Reserved.
     </footer>
   );
