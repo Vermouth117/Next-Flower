@@ -22,7 +22,16 @@ module.exports = {
 
   production: {
     client: "postgresql",
-    connection: process.env.DB_URL,
+    connection: {
+      // connectionString: "postgresql://user:password@localhost:5431/flower_shop",
+      // 上記と下記、どちらかでいい
+      host: "localhost",
+      port: 5431,
+      user: "user",
+      database: "flower_shop",
+      password: "password",
+      ssl: process.env.DB_SSL ? { rejectUnauthorized: false } : false,
+    },
     migrations: { directory: "./migrations" },
     seeds: { directory: "./seeds" },
     pool: {
