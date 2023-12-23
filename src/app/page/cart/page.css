@@ -1,8 +1,7 @@
-
 @import url("https://fonts.googleapis.com/css2?family=Marcellus&family=Playfair&family=Kaisei+Opti&display=swap");
 
 .cart-box {
-  background-color :cornflowerblue;
+  background-color: cornflowerblue;
   min-height: 100vh;
   position: relative;
   padding-top: 11em;

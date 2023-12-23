@@ -6,10 +6,10 @@ phases:
       nodejs: 18
     commands:
       # - some command
-  pre_build:   # ビルド実行前に実行する処理等の設定
+  pre_build: # ビルド実行前に実行する処理等の設定
     commands:
       - npm i
-  build:   # ビルド実行処理等の設定
+  build: # ビルド実行処理等の設定
     commands:
       - npm run build
   # post_build:
@@ -17,5 +17,5 @@ phases:
   #     - some command
 artifacts:
   files:
-    - '**/*'   # 出力するビルドファイル
+    - "**/*" # 出力するビルドファイル
   base-directory: "out"

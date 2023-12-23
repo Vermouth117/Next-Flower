@@ -1,5 +1,5 @@
 {
-  "name": "my-app",
+  "name": "next-flower",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "test": "jest",
     "migrate-make": "knex migrate:make --knexfile src/db/knexfile.js",
     "migrate-latest": "knex migrate:latest --knexfile src/db/knexfile.js",
     "migrate-down": "knex migrate:down --knexfile src/db/knexfile.js",
@@ -30,5 +31,13 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "typescript": "5.2.2"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.1.5",
+    "@testing-library/react": "^14.1.2",
+    "esbuild-jest": "^0.5.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "user-event": "^4.0.0"
   }
 }

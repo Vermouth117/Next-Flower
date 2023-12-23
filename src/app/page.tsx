@@ -1,4 +1,3 @@
-
 import styles from "./page.module.css";
 import Header from "./components/organisms/Header";
 import Footer from "./components/organisms/Footer";
@@ -13,4 +12,4 @@ export default function Home() {
       <Footer />
     </>
   );
-};
+}
