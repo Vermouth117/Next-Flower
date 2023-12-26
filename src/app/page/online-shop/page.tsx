@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 
 import "./page.css";
 import Modal from "./Modal";
-import { FlowerInfo } from "@/types";
+import { FlowerInfo } from "@/app/models/types";
 import Header from "../../components/organisms/Header";
 import Footer from "../../components/organisms/Footer";
 

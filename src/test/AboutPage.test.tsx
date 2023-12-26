@@ -1,4 +1,5 @@
 import { render, screen } from "@testing-library/react";
+
 import AboutPage from "../app/page/about/page";
 
 test("必要な項目が表示されている", () => {
